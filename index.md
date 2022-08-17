@@ -1,7 +1,7 @@
 ---
 title: Condensed Matter Dictionary
 layout: template
-filename: index.md
+filename: index
 --- 
 # hello
 ## testing testing
