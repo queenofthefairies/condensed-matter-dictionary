@@ -1,5 +1,25 @@
-{{ content }}
-<a href=condensed-matter-dictionary>Condensed Matter Dictionary</a>
-{% for page in site.pages %}
-    <a href={{ page.filename }}>{{ page.title }}</a>
-{% endfor %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Condensed Matter Dictionary</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+  </head>
+  <body>
+    <div class="content">
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About the author</a>
+      </nav>
+
+      {{ content }}
+        
+      {% for page in site.pages %}
+      <a href={{ page.filename }}>{{ page.title }}</a>
+      {% endfor %}
+
+      <hr>
+      <footer>Thanks for visiting my blog!</footer>
+    </div>
+  </body>
+</html>
